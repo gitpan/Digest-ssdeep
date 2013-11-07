@@ -1,0 +1,12 @@
+Changes
+lib/Digest/ssdeep.pm
+MANIFEST			This list of files
+MANIFEST.SKIP
+README
+t/00.load.t
+t/01.hash.t
+t/02.compare.t
+t/perlcritic.t
+t/pod-coverage.t
+t/pod.t
+META.yml                                 Module meta-data (added by MakeMaker)
