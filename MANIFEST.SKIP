@@ -15,3 +15,5 @@ Digest-ssdeep-*
 .*\.swp
 ^MYMETA\.yml$
 ^MYMETA\.json$
+pod-coverage.t
+perlcritic.t

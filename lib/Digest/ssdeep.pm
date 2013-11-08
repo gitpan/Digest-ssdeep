@@ -7,7 +7,7 @@ use Text::WagnerFischer qw/distance/;
 use List::Util qw/max/;
 
 use version; 
-our $VERSION = qv('0.9.2');
+our $VERSION = qv('0.9.3');
 
 BEGIN {
     require Exporter;
@@ -250,7 +250,7 @@ sub ssdeep_compare {
     my @hashB;    # hash = bs:hash1:hash2
     @hashA = ref( $_[0] ) eq 'ARRAY' ? @{ $_[0] } : split ':', $_[0];
     @hashB = ref( $_[1] ) eq 'ARRAY' ? @{ $_[1] } : split ':', $_[1];
-    my $min_lcs = $_[3] || 7;
+    my $min_lcs = $_[2] || 7;
 
     if ( @hashA != 3 or $hashA[0] !~ /\d+/ ) {
         carp "Argument 1 is not a ssdeep hash.";
