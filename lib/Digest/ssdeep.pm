@@ -7,7 +7,7 @@ use Text::WagnerFischer qw/distance/;
 use List::Util qw/max/;
 
 use version; 
-our $VERSION = qv('0.9.1');
+our $VERSION = qv('0.9.2');
 
 BEGIN {
     require Exporter;
